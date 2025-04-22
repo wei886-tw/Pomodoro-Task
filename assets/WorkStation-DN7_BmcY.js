@@ -1,0 +1,1 @@
+import{_ as r,c as t,b as a,a as e,r as s,F as c,o as l}from"./index-tScDqNgh.js";const i={};function d(_,o){const n=s("router-view");return l(),t(c,null,[a(n),o[0]||(o[0]=e("div",{class:"container-fluid d-flex"},[e("div",{class:"container"},[e("h1",null,"Task")]),e("div",{class:"container"})],-1))],64)}const u=r(i,[["render",d]]);export{u as default};
