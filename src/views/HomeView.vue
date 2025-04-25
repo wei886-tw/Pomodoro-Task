@@ -1,42 +1,33 @@
 <template>
-
-  <div class="container-fluid vh-100">
-    <div class="container h-100 my-auto">
-      <div class="row h-100">
-        <div class="col-lg-6 d-flex align-items-end align-items-md-center justify-content-center">
-          <img src="/logo.png" alt="logo" class="home-logo" />
+  <div class="container-fluid ps-0">
+    <!-- 左邊選單 -->
+    <div class="row">
+      <div class="col-2 bg-navbar vh-100 pe-0">
+        <div class="container text-white roboto px-0">
+          <h1 class="yeseva ps-16 pt-24 mb-32 border-bottom border-2">Home</h1>
+          <ul class="list-unstyled fs-24 yeseva ps-16 gap-16">
+            <li class="mb-16">Tasks</li>
+            <li class="mb-16">Statics</li>
+            <li class="mb-16">Sessions</li>
+          </ul>
         </div>
-        <div
-          class="col-lg-6 d-flex flex-column justify-content-start justify-content-md-center text-center"
-        >
-          <h1 class="fw-bold fs-32 fs-md-48 fs-lg-64 yeseva">PomodoroTask</h1>
-          <p class="roboto fw-bold fs-md-24 mb-48 mb-lg-96">
-            Boost productivity with focused work sessions
-          </p>
-          <button class="btn btn-dark mb-16 w-75 mx-auto roboto">
-            <router-link to="/workStation" class="text-white fs-lg-24">Get started</router-link>
-          </button>
-          <button class="btn btn-dark w-75 mx-auto roboto">Access Account</button>
+      </div>
+
+      <div class="col-8">
+        <div class="container">
+          <div class="row">
+            <div class="col-4">
+              <h2>Tasks</h2>
+            </div>
+            <div class="col-4"></div>
+          </div>
         </div>
       </div>
     </div>
+
+    <router-view></router-view>
   </div>
 </template>
 
-<style lang="scss">
-@mixin mobile {
-  @media (max-width: 576px) {
-    @content;
-  }
-}
-
-.home-logo {
-  @include mobile {
-    width: 88%;
-    height: 88%;
-  }
-}
-</style>
-
-
-
+<script>
+</script>
