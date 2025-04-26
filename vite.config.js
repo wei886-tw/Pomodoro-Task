@@ -6,6 +6,13 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 
 // https://vite.dev/config/
 export default defineConfig({
+  css: {
+    preprocessorOptions: {
+      scss: {
+        // 可能的設定
+      }
+    }
+  },
   base: '/Pomodoro-Task/',
   plugins: [
     vue(),
