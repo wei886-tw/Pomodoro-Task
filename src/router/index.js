@@ -14,6 +14,11 @@ const router = createRouter({
       name: 'homeView',
       component: () => import('../views/HomeView.vue'),
     },
+    {
+      path: '/pomodoroView',
+      name: 'pomodoroView',
+      component: () => import('../views/PomodoroView.vue'),
+    },
   ],
 })
 
